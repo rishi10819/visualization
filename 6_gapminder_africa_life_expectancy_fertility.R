@@ -10,7 +10,7 @@ colnames (gapminder)
 #"country" "year" "infant_mortality" "life_expectancy" "fertility" "population" "gdp" "continent" "region"  
 
 
-# Using ggplot and the points layer, create a scatter plot of 
+# Create a scatter plot of 
 # life expectancy versus fertility for the African continent in 2012.
 
 gapminder %>% filter( year == 2012 & continent == "Africa") %>%
@@ -24,6 +24,7 @@ gapminder %>% filter( year == 2012 & continent == "Africa") %>%
   geom_point()
 
 
+# Create a table showing the country and region for the African countries that 
 # in 2012 had fertility rates of 3 or less and life expectancies of at least 70.
 # Assign your result to a data frame called df.
 
